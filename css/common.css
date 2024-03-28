@@ -235,11 +235,17 @@ p {
   padding: 8px 16px;
   width: 148px;
   background-color: #4e75ff;
+  font-family: var(--font-family);
   font-weight: 500;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
   margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
 }
 .change-color:hover {
   background-color: #6c8cff;
@@ -271,7 +277,7 @@ input[type="number"] {
   border: 1px solid #808080;
   border-radius: 8px;
   padding: 8px 72px;
-  /* width: 150px; */
+  width: 150px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
@@ -285,5 +291,30 @@ input[type="number"]:focus {
 div {
   flex-shrink: 0;
 }
-
+[data-create] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+}
+[data-destroy] {
+  background: #ff4e4e;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
 /* #endregion Task - 6 */
