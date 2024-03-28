@@ -13,4 +13,8 @@ function getColor() {
   const color = getRandomHexColor();
   bodyEl.style.backgroundColor = color;
   textEl.textContent = color;
+  textEl.style.color = color;
 }
+
+
+buttonEl.addEventListener('click', getColor);
